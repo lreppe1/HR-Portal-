@@ -1,0 +1,359 @@
+{
+  "employees": [
+    {
+      "id": "e-1001",
+      "role": "employee",
+      "name": "Leah",
+      "email": "Reppert@gmail.comD",
+      "password": "Employee123!",
+      "department": "Operations",
+      "title": "Associate",
+      "status": "active",
+      "createdAt": 1700000000000,
+      "employeeId": "EMP-2025-000123",
+      "firstName": "Employee",
+      "lastName": "User",
+      "gender": "UNSPECIFIED",
+      "dateOfBirth": "1995-01-01",
+      "maritalStatus": "SINGLE",
+      "nationality": "US",
+      "phone": "555-111-2222",
+      "address": {
+        "line1": "100 Main St",
+        "city": "Miami",
+        "state": "FL",
+        "zip": "33101"
+      },
+      "contactDetails": {
+        "personalEmail": "employee.personal@gmail.com",
+        "mobileNumber": "+1-555-111-2222",
+        "emergencyContact": {
+          "name": "Emergency Contact",
+          "relationship": "Friend",
+          "phone": "+1-555-222-3333"
+        }
+      },
+      "profileDocuments": [
+        {
+          "id": "doc-emp-1",
+          "type": "id",
+          "fileName": "drivers-license.png",
+          "url": "https://example.com/drivers-license.png",
+          "uploadedAt": 1760000000000
+        }
+      ]
+    },
+    {
+      "id": "a-9001",
+      "role": "admin",
+      "name": "HR Admin",
+      "email": "admin@company.com",
+      "password": "Admin123!",
+      "department": "HR",
+      "title": "HR Admin",
+      "status": "active",
+      "createdAt": 1700000001000,
+      "phone": "555-999-0000",
+      "address": {
+        "line1": "200 Admin Rd",
+        "city": "Miami",
+        "state": "FL",
+        "zip": "33101"
+      }
+    }
+  ],
+  "leaveRequests": [
+    {
+      "id": "lr-1",
+      "employeeId": "e-1001",
+      "employeeName": "Employee User",
+      "type": "Vacation",
+      "startDate": "2026-03-10",
+      "endDate": "2026-03-12",
+      "reason": "Family trip",
+      "status": "pending",
+      "decisionNote": "",
+      "reviewedBy": null,
+      "reviewedAt": null,
+      "createdAt": 1760000000000
+    },
+    {
+      "id": "lr-1770162814062",
+      "employeeId": "e-1001",
+      "employeeName": "Employee User",
+      "startDate": "2026-09-24",
+      "endDate": "2026-11-13",
+      "reason": "fmla",
+      "status": "Approved",
+      "decisionNote": "",
+      "createdAt": 1770162814062
+    },
+    {
+      "id": "lr-1770167308374",
+      "employeeId": "e-1001",
+      "employeeName": "Employee User",
+      "startDate": "2026-02-19",
+      "endDate": "2026-02-19",
+      "reason": "fmla",
+      "status": "Denied",
+      "decisionNote": "not approved",
+      "createdAt": 1770167308374
+    },
+    {
+      "id": "lr-1770167874268",
+      "employeeId": "e-1001",
+      "employeeName": "Employee User",
+      "startDate": "2026-02-18",
+      "endDate": "2026-02-28",
+      "reason": "Personal",
+      "status": "Approved",
+      "decisionNote": "Approved",
+      "createdAt": 1770167874268
+    }
+  ],
+  "onboarding": [
+    {
+      "id": "ob-1",
+      "employeeId": "e-1001",
+      "stage": "completed",
+      "personalInfo": {
+        "employeeId": "EMP-2025-000123",
+        "firstName": "Employee",
+        "lastName": "User",
+        "gender": "UNSPECIFIED",
+        "dateOfBirth": "1995-01-01",
+        "maritalStatus": "SINGLE",
+        "nationality": "US"
+      },
+      "contactDetails": {
+        "personalEmail": "employee.personal@gmail.com",
+        "mobileNumber": "+1-555-111-2222",
+        "emergencyContact": {
+          "name": "Emergency Contact",
+          "relationship": "Friend",
+          "phone": "+1-555-222-3333"
+        }
+      },
+      "documents": [
+        {
+          "id": "doc-1",
+          "type": "id",
+          "fileName": "drivers-license.png",
+          "url": "https://example.com/drivers-license.png",
+          "uploadedAt": 1760000000000
+        }
+      ],
+      "payrollSetup": {
+        "payType": "salary",
+        "rate": 3200,
+        "taxRegion": "US-FL",
+        "paymentMethod": "direct_deposit",
+        "bankLast4": "1234"
+      },
+      "createdAt": 1760000000000,
+      "updatedAt": 1760000000000
+    }
+  ],
+  "paystubs": [
+    {
+      "id": "p-1",
+      "employeeId": "e-1001",
+      "periodStart": "2026-02-01",
+      "periodEnd": "2026-02-15",
+      "payDate": "2026-02-15",
+      "gross": 3200,
+      "tax": 550,
+      "net": 2450,
+      "deductions": [
+        {
+          "name": "Health",
+          "amount": 100
+        },
+        {
+          "name": "401k",
+          "amount": 100
+        }
+      ],
+      "status": "issued",
+      "createdAt": 1760000000000,
+      "createdBy": "a-9001"
+    }
+  ],
+  "profileChangeRequests": [
+    {
+      "id": "pcr-1",
+      "employeeId": "e-1001",
+      "employeeName": "Employee User",
+      "employeeEmail": "employee@company.com",
+      "status": "pending",
+      "requestedChanges": {
+        "firstName": "Employee",
+        "lastName": "User",
+        "gender": "UNSPECIFIED",
+        "dateOfBirth": "1995-01-01",
+        "maritalStatus": "SINGLE",
+        "nationality": "US",
+        "contactDetails": {
+          "personalEmail": "employee.personal@gmail.com",
+          "mobileNumber": "+1-555-111-9999",
+          "emergencyContact": {
+            "name": "Emergency Contact",
+            "relationship": "Friend",
+            "phone": "+1-555-222-3333"
+          }
+        },
+        "phone": "555-111-9999",
+        "address": {
+          "line1": "101 Main St",
+          "city": "Miami",
+          "state": "FL",
+          "zip": "33101"
+        }
+      },
+      "decisionNote": "",
+      "reviewedBy": null,
+      "reviewedAt": null,
+      "createdAt": 1760000000000
+    },
+    {
+      "id": "pcr-1770167968943",
+      "employeeId": "e-1001",
+      "employeeName": "Employee User",
+      "employeeEmail": "employee@company.com",
+      "status": "pending",
+      "requestedChanges": {
+        "firstName": "Employee",
+        "lastName": "User",
+        "gender": "UNSPECIFIED",
+        "dateOfBirth": "1995-01-01",
+        "maritalStatus": "SINGLE",
+        "nationality": "US",
+        "phone": "555-111-2222",
+        "address": {
+          "line1": "100 Main St",
+          "city": "Miami",
+          "state": "FL",
+          "zip": "33101"
+        },
+        "contactDetails": {
+          "personalEmail": "employee.personal@gmail.com",
+          "mobileNumber": "+1-555-111-2222",
+          "emergencyContact": {
+            "name": "Emergency Contact",
+            "relationship": "Friend",
+            "phone": "+1-555-222-3333"
+          }
+        }
+      },
+      "decisionNote": "",
+      "reviewedBy": null,
+      "reviewedAt": null,
+      "createdAt": 1770167968943
+    },
+    {
+      "id": "pcr-1770167974389",
+      "employeeId": "e-1001",
+      "employeeName": "Employee User",
+      "employeeEmail": "employee@company.com",
+      "status": "denied",
+      "requestedChanges": {
+        "firstName": "Employee",
+        "lastName": "User",
+        "gender": "UNSPECIFIED",
+        "dateOfBirth": "1995-01-01",
+        "maritalStatus": "SINGLE",
+        "nationality": "US",
+        "phone": "555-111-2222",
+        "address": {
+          "line1": "100 Main St",
+          "city": "Miami",
+          "state": "FL",
+          "zip": "33101"
+        },
+        "contactDetails": {
+          "personalEmail": "employee.personal@gmail.com",
+          "mobileNumber": "+1-555-111-2222",
+          "emergencyContact": {
+            "name": "Emergency Contact",
+            "relationship": "Friend",
+            "phone": "+1-555-222-3333"
+          }
+        }
+      },
+      "decisionNote": "",
+      "reviewedBy": "a-9001",
+      "reviewedAt": 1770168311395,
+      "createdAt": 1770167974389
+    },
+    {
+      "id": "pcr-1770167977297",
+      "employeeId": "e-1001",
+      "employeeName": "Employee User",
+      "employeeEmail": "employee@company.com",
+      "status": "approved",
+      "requestedChanges": {
+        "firstName": "Employee",
+        "lastName": "User",
+        "gender": "UNSPECIFIED",
+        "dateOfBirth": "1995-01-01",
+        "maritalStatus": "SINGLE",
+        "nationality": "US",
+        "phone": "555-111-2222",
+        "address": {
+          "line1": "100 Main St",
+          "city": "Miami",
+          "state": "FL",
+          "zip": "33101"
+        },
+        "contactDetails": {
+          "personalEmail": "employee.personal@gmail.com",
+          "mobileNumber": "+1-555-111-2222",
+          "emergencyContact": {
+            "name": "Emergency Contact",
+            "relationship": "Friend",
+            "phone": "+1-555-222-3333"
+          }
+        }
+      },
+      "decisionNote": "",
+      "reviewedBy": "a-9001",
+      "reviewedAt": 1770168286897,
+      "createdAt": 1770167977297
+    },
+    {
+      "id": "pcr-1770168243512",
+      "employeeId": "a-9001",
+      "employeeName": "HR Admin",
+      "employeeEmail": "admin@company.com",
+      "status": "denied",
+      "requestedChanges": {
+        "firstName": "",
+        "lastName": "",
+        "gender": "",
+        "dateOfBirth": "",
+        "maritalStatus": "",
+        "nationality": "",
+        "phone": "555-999-0000",
+        "address": {
+          "line1": "200 Admin Rd",
+          "city": "Miami",
+          "state": "FL",
+          "zip": "33101"
+        },
+        "contactDetails": {
+          "personalEmail": "",
+          "mobileNumber": "",
+          "emergencyContact": {
+            "name": "",
+            "relationship": "",
+            "phone": ""
+          }
+        }
+      },
+      "decisionNote": "",
+      "reviewedBy": "a-9001",
+      "reviewedAt": 1770168322909,
+      "createdAt": 1770168243512
+    }
+  ]
+}
