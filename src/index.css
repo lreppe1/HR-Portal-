@@ -1,0 +1,38 @@
+:root {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #f6f7fb; /* light background */
+  color: #111;
+}
+
+/* Let your app control layout. Don't center the whole page. */
+#root {
+  min-height: 100vh;
+}
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Optional: make buttons look consistent */
+button {
+  font-family: inherit;
+}
